@@ -75,7 +75,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    'mongodb+srv://yudhaez021:damwFBVemj984xbJ@cluster0.xadyf.mongodb.net/newDatabase?retryWrites=true&w=majority'
+    'mongodb+srv://{usernameDb}:{passwordDb}@cluster0.xadyf.mongodb.net/{databaseName}?retryWrites=true&w=majority'
   )
   .then(result => {
     const server = app.listen(8080);
